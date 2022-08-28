@@ -1,0 +1,26 @@
+<div class="converter">
+  <div class="block">
+    <ul class="currencies">
+      <li
+        *ngFor="let cur of currencyItems"
+        [ngClass]="{ active: fromCurrency === cur }"
+        (click)="changeFromCurrency(cur)"
+      >
+        {{ cur }}
+      </li>
+    </ul>
+    <input type="number" [(ngModel)]="fromPrice" (input)="calcToPrice()" />
+  </div>
+  <div class="block">
+    <ul class="currencies">
+      <li
+        *ngFor="let cur of currencyItems"
+        [ngClass]="{ active: toCurrency === cur }"
+        (click)="changeToCurrency(cur)"
+      >
+        {{ cur }}
+      </li>
+    </ul>
+    <input type="number" [(ngModel)]="toPrice" (input)="calcFromPrice()" />
+  </div>
+</div>

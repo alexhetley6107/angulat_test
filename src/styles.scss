@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: #efffe4;
+
+  padding: 0;
+  margin: 0;
+
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;*/
+}
+
+* {
+  font-family: "Inter", system-ui !important;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+$green: #16b67f;
